@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WF7DN8H6');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Slimtide — India's Hormone-Aware Weight Loss Program</title>
+<meta name="description" content="Slimtide is India's first hormone-aware fat loss program built for thyroid, PCOS, belly fat, and metabolic resistance. No crash diets. No gym. Book your free consultation today."/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --forest: #0a3d2e;
+    --teal: #0f7c5a;
+    --teal-mid: #1a9e75;
+    --teal-light: #d4f0e5;
+    --cream: #faf8f3;
+    --warm-white: #fff9f4;
+    --amber: #c47d15;
+    --amber-light: #fdf0d8;
+    --ink: #1a1a18;
+    --muted: #5a5a55;
+    --border: #e6e2d8;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: var(--warm-white); color: var(--ink); }
+  h1, h2, h3, .serif { font-family: 'Cormorant Garamond', serif; }
+
+  /* NAV */
+  .nav-glass { backdrop-filter: blur(16px); background: rgba(250,248,243,0.88); }
+
+  /* HERO */
+  .hero-bg {
+    background-image: linear-gradient(135deg, rgba(10,61,46,0.82) 0%, rgba(15,124,90,0.6) 60%, rgba(10,61,46,0.75) 100%),
+      url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1600&q=80&fit=crop');
+    background-size: cover; background-position: center 30%;
+  }
+  .hero-text-shadow { text-shadow: 0 2px 24px rgba(0,0,0,0.22); }
+
+  /* CARDS */
+  .card-premium {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: 0 2px 20px rgba(10,61,46,0.06), 0 0 0 0.5px rgba(10,61,46,0.04);
+    transition: box-shadow 0.25s, transform 0.25s;
+  }
+  .card-premium:hover { box-shadow: 0 8px 36px rgba(10,61,46,0.12); transform: translateY(-2px); }
+
+  /* TEAL GRADIENT CARD */
+  .card-teal {
+    background: linear-gradient(135deg, var(--forest) 0%, var(--teal) 100%);
+    border-radius: 20px;
+    color: #fff;
+  }
+
+  /* BEFORE AFTER */
+  .ba-img {
+    height: 320px;
+    object-fit: cover;
+    object-position: center 30%;
+    border-radius: 16px;
+  }
+
+  /* STEP CONNECTOR */
+  .step-line::after {
+    content: '';
+    position: absolute;
+    top: 28px; left: calc(50% + 28px);
+    width: calc(100% - 56px); height: 1px;
+    background: linear-gradient(90deg, var(--teal-mid), transparent);
+  }
+
+  /* FAQ ACCORDION */
+  .faq-item summary { cursor: pointer; list-style: none; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item[open] summary .faq-icon { transform: rotate(45deg); }
+  .faq-icon { transition: transform 0.2s; }
+
+  /* STICKY CTA */
+  .sticky-cta {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
+    padding: 12px 16px 16px;
+    background: linear-gradient(0deg, rgba(255,249,244,1) 0%, rgba(255,249,244,0) 100%);
+    background: var(--warm-white);
+    border-top: 1px solid var(--border);
+    box-shadow: 0 -8px 24px rgba(10,61,46,0.08);
+  }
+  @media(min-width: 768px) { .sticky-cta { display: none !important; } }
+
+  /* TRUST BADGE */
+  .badge-trust {
+    background: var(--teal-light);
+    border: 1px solid rgba(15,124,90,0.18);
+    border-radius: 100px;
+    padding: 6px 16px;
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 13px; font-weight: 500; color: var(--forest);
+  }
+
+  /* WHATSAPP BTN */
+  .wa-btn { background: #25d366; border-radius: 14px; display: inline-flex; align-items: center; gap: 8px; }
+  .wa-btn:hover { background: #1ebe5d; }
+
+  /* SECTION LABEL */
+  .section-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase;
+    color: var(--teal-mid); margin-bottom: 12px; display: block;
+  }
+
+  /* NUMBER LARGE */
+  .stat-number { font-family: 'Cormorant Garamond', serif; font-size: 52px; font-weight: 700; line-height: 1; color: var(--forest); }
+
+  /* DOTS PATTERN */
+  .dots-bg {
+    background-image: radial-gradient(circle, rgba(15,124,90,0.12) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+
+  /* TESTIMONIAL QUOTE */
+  .quote-mark { font-family: 'Cormorant Garamond', serif; font-size: 80px; line-height: 0.6; color: var(--teal-light); }
+
+  /* PHASE TAG */
+  .phase-tag { font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; }
+
+  /* FORM */
+  .form-input {
+    width: 100%; padding: 14px 18px; border: 1.5px solid var(--border);
+    border-radius: 12px; font-family: 'DM Sans', sans-serif; font-size: 15px;
+    background: #fff; outline: none; transition: border-color 0.2s;
+    color: var(--ink);
+  }
+  .form-input:focus { border-color: var(--teal-mid); }
+  .form-input::placeholder { color: #b0aca3; }
+
+  /* CTA BUTTON */
+  .btn-primary {
+    background: linear-gradient(135deg, var(--teal) 0%, var(--forest) 100%);
+    color: #fff; border: none; border-radius: 12px; cursor: pointer;
+    font-family: 'DM Sans', sans-serif; font-weight: 600;
+    transition: opacity 0.2s, transform 0.15s; display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+  .btn-outline {
+    background: transparent; border: 1.5px solid rgba(255,255,255,0.55);
+    color: #fff; border-radius: 12px; cursor: pointer;
+    font-family: 'DM Sans', sans-serif; font-weight: 500;
+    transition: background 0.2s; display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-outline:hover { background: rgba(255,255,255,0.1); }
+
+  /* DIVIDER */
+  .fancy-divider { width: 48px; height: 3px; background: linear-gradient(90deg, var(--teal-mid), var(--teal-light)); border-radius: 999px; }
+
+  /* SCROLL REVEAL */
+  @keyframes fadeUp { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
+  .reveal { animation: fadeUp 0.6s ease both; }
+  .delay-1 { animation-delay: 0.1s; } .delay-2 { animation-delay: 0.2s; } .delay-3 { animation-delay: 0.3s; }
+</style>
+</head>
+<body class="overflow-x-hidden">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WF7DN8H6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+<nav class="nav-glass fixed top-0 left-0 right-0 z-40 border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-5 flex items-center justify-between h-16">
+    <div class="flex items-center gap-2">
+      <!-- Slimtide Logo Icon -->
+      <div class="w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #0f7c5a, #0a3d2e);">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M9.5 1.5L4.5 8.5H8L6 14.5L11.5 7H8L9.5 1.5Z" fill="#ffffff" stroke="#ffffff" stroke-width="0.4" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="flex items-baseline gap-px">
+        <span class="font-bold text-lg tracking-tight leading-none" style="color: var(--forest);">Slim</span><span class="font-bold text-lg tracking-tight leading-none" style="color: var(--teal-mid);">tide</span>
+      </div>
+    </div>
+    <div class="hidden md:flex items-center gap-7">
+      <a href="#method" class="text-sm font-medium" style="color: var(--muted);">The Protocol</a>
+      <a href="#glp" class="text-sm font-medium" style="color: var(--muted);">The Science</a>
+      <a href="#results" class="text-sm font-medium" style="color: var(--muted);">Results</a>
+      <a href="#faq" class="text-sm font-medium" style="color: var(--muted);">FAQ</a>
+    </div>
+    <a href="#consult">
+      <button class="btn-primary text-sm px-5 py-2.5 hidden md:flex">
+        Book Free Consultation
+        <svg width="14" height="14" fill="none" viewBox="0 0 14 14"><path d="M2 7h10M8 3l4 4-4 4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </a>
+    <a href="#consult" class="md:hidden">
+      <button class="btn-primary text-sm px-4 py-2">Book Call</button>
+    </a>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+<section class="hero-bg min-h-screen flex flex-col justify-center pt-16">
+  <div class="max-w-6xl mx-auto px-5 w-full py-20 md:py-32">
+    <div class="max-w-2xl">
+      <div class="badge-trust mb-6 reveal">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M4 6l1.5 1.5L8 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        Clinician-designed · 1,200+ transformations
+      </div>
+      <h1 class="text-4xl md:text-6xl font-semibold leading-tight mb-6 hero-text-shadow reveal delay-1" style="color:#fff; font-family:'Cormorant Garamond',serif;">
+        Your belly fat isn't a<br/>
+        <em>willpower problem.</em><br/>
+        <span style="color: #a8e6cf;">It's a metabolic signal.</span>
+      </h1>
+      <p class="text-lg md:text-xl mb-8 leading-relaxed reveal delay-2" style="color: rgba(255,255,255,0.82);">
+        India's first hormone-aware fat loss protocol — built for thyroid, PCOS, and metabolic resistance in Indian bodies. No crash diets. No gym obsession.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 reveal delay-3">
+        <a href="#consult">
+          <button class="btn-primary text-base px-7 py-4 w-full sm:w-auto justify-center">
+            Book My Free Assessment
+            <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </a>
+        <a href="https://wa.me/918956417975?text=Hi%2C+I%27d+like+to+know+more+about+Slimtide" target="_blank">
+          <button class="wa-btn text-base px-7 py-4 w-full sm:w-auto justify-center font-semibold text-white">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chat on WhatsApp
+          </button>
+        </a>
+      </div>
+      <p class="text-sm mt-4 reveal delay-3" style="color: rgba(255,255,255,0.55);">No diet plan downloads. No gym membership needed. 100% personalised.</p>
+    </div>
+  </div>
+
+  <!-- Stats bar -->
+  <div class="border-t" style="border-color: rgba(255,255,255,0.12); background: rgba(10,61,46,0.55); backdrop-filter: blur(10px);">
+    <div class="max-w-6xl mx-auto px-5 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div><div class="text-2xl md:text-3xl font-bold" style="color:#a8e6cf; font-family:'Cormorant Garamond',serif;">1,200+</div><div class="text-xs mt-1" style="color:rgba(255,255,255,0.65);">Clients transformed</div></div>
+      <div><div class="text-2xl md:text-3xl font-bold" style="color:#a8e6cf; font-family:'Cormorant Garamond',serif;">87%</div><div class="text-xs mt-1" style="color:rgba(255,255,255,0.65);">Improved thyroid markers</div></div>
+      <div><div class="text-2xl md:text-3xl font-bold" style="color:#a8e6cf; font-family:'Cormorant Garamond',serif;">7.4 kg</div><div class="text-xs mt-1" style="color:rgba(255,255,255,0.65);">Average loss in 90 days</div></div>
+      <div><div class="text-2xl md:text-3xl font-bold" style="color:#a8e6cf; font-family:'Cormorant Garamond',serif;">18</div><div class="text-xs mt-1" style="color:rgba(255,255,255,0.65);">States across India</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ PROBLEM ═══════════════════════════ -->
+<section class="py-20 md:py-28" style="background: var(--cream);">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="text-center mb-14">
+      <span class="section-label">Why diets fail you</span>
+      <h2 class="text-3xl md:text-5xl font-semibold mb-4" style="color: var(--forest);">The problem isn't your discipline.<br/>It's what no one told you.</h2>
+      <div class="fancy-divider mx-auto mt-4"></div>
+      <p class="mt-6 text-base md:text-lg max-w-xl mx-auto" style="color: var(--muted);">Standard diets assume all bodies work the same. Yours doesn't. Here's what's actually in your way.</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <!-- Card 1 -->
+      <div class="card-premium p-7">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: var(--teal-light);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.8"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2" style="color: var(--forest);">Thyroid Suppression</h3>
+        <p class="text-sm leading-relaxed" style="color: var(--muted);">Low-calorie diets reduce T3 output by up to 40%. Your metabolism slows down the harder you try to diet. This is biology, not failure.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="card-premium p-7">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: var(--amber-light);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2" style="color: var(--forest);">PCOS & Insulin Resistance</h3>
+        <p class="text-sm leading-relaxed" style="color: var(--muted);">Elevated androgens and insulin dysregulation make standard calorie restriction ineffective. Your body stores fat even when eating less.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="card-premium p-7">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: #fde8e8;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c0392b" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2" style="color: var(--forest);">Cortisol Overload</h3>
+        <p class="text-sm leading-relaxed" style="color: var(--muted);">Chronic stress floods your body with cortisol — a hormone that directly commands your body to store belly fat. No diet fixes stress-driven fat.</p>
+      </div>
+      <!-- Card 4 -->
+      <div class="card-premium p-7">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: #e8f4ff;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a6fd4" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2" style="color: var(--forest);">Metabolic Adaptation</h3>
+        <p class="text-sm leading-relaxed" style="color: var(--muted);">After each failed diet, your resting metabolic rate drops further. Your body learns to need fewer calories, making every next attempt harder.</p>
+      </div>
+      <!-- Card 5 -->
+      <div class="card-premium p-7">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-5" style="background: #f0ebff;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-2" style="color: var(--forest);">Post-Delivery Weight</h3>
+        <p class="text-sm leading-relaxed" style="color: var(--muted);">Hormonal shifts after childbirth fundamentally change how your body handles fat storage. Standard plans ignore this entirely.</p>
+      </div>
+      <!-- Card 6 -->
+      <div class="card-teal p-7 flex flex-col justify-between">
+        <div>
+          <h3 class="text-xl font-semibold mb-3 text-white">Sound familiar?</h3>
+          <p class="text-sm leading-relaxed mb-6" style="color: rgba(255,255,255,0.78);">If you've tried diets and failed, the system was wrong — not you. A 30-minute call with our metabolic specialist changes everything.</p>
+        </div>
+        <a href="#consult">
+          <button class="btn-primary px-5 py-3 text-sm font-semibold w-full justify-center" style="background: rgba(255,255,255,0.15); border: 1.5px solid rgba(255,255,255,0.3);">
+            Book Free Consultation →
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ BEFORE / AFTER ═══════════════════════════ -->
+<section id="results" class="py-20 md:py-28" style="background: var(--warm-white);">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="text-center mb-14">
+      <span class="section-label">Real transformations</span>
+      <h2 class="text-3xl md:text-5xl font-semibold mb-4" style="color: var(--forest);">Verified results.<br/>No filters. No exceptions.</h2>
+      <div class="fancy-divider mx-auto mt-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card 1 — Female, PCOS + thyroid -->
+      <div class="card-premium overflow-hidden">
+        <div class="grid grid-cols-2 gap-1 p-3">
+          <div class="relative">
+            <img src="before-after-female1.jpeg" alt="Before" class="ba-img w-full" style="object-position: 25% center;"/>
+            <span class="absolute bottom-2 left-2 text-xs font-semibold bg-black/50 text-white px-2 py-0.5 rounded">Before</span>
+          </div>
+          <div class="relative">
+            <img src="before-after-female1.jpeg" alt="After" class="ba-img w-full" style="object-position: 75% center;"/>
+            <span class="absolute bottom-2 left-2 text-xs font-semibold bg-black/50 text-white px-2 py-0.5 rounded">After</span>
+          </div>
+        </div>
+        <div class="px-5 pb-5">
+          <div class="flex items-center justify-between mb-2">
+            <div>
+              <div class="font-semibold text-base" style="color: var(--forest);">Grace Morgen</div>
+              <div class="text-xs" style="color: var(--muted);">PCOS + thyroid</div>
+            </div>
+            <div class="text-right">
+              <div class="text-2xl font-bold" style="color: var(--teal-mid); font-family:'Cormorant Garamond',serif;">−11 kg</div>
+              <div class="text-xs" style="color: var(--muted);">in 14 weeks</div>
+            </div>
+          </div>
+          <p class="text-xs leading-relaxed" style="color: var(--muted);">"I'd tried everything. This protocol actually looked at my labs before prescribing anything."</p>
+        </div>
+      </div>
+
+      <!-- Card 2 — Male, belly fat -->
+      <div class="card-premium overflow-hidden">
+        <div class="grid grid-cols-2 gap-1 p-3">
+          <div class="relative">
+            <img src="before-after-male.jpeg" alt="Before" class="ba-img w-full" style="object-position: 25% center;"/>
+            <span class="absolute bottom-2 left-2 text-xs font-semibold bg-black/50 text-white px-2 py-0.5 rounded">Before</span>
+          </div>
+          <div class="relative">
+            <img src="before-after-male.jpeg" alt="After" class="ba-img w-full" style="object-position: 75% center;"/>
+            <span class="absolute bottom-2 left-2 text-xs font-semibold bg-black/50 text-white px-2 py-0.5 rounded">After</span>
+          </div>
+        </div>
+        <div class="px-5 pb-5">
+          <div class="flex items-center justify-between mb-2">
+            <div>
+              <div class="font-semibold text-base" style="color: var(--forest);">Emily Vancamp</div>
+              <div class="text-xs" style="color: var(--muted);">Belly fat + plateau</div>
+            </div>
+            <div class="text-right">
+              <div class="text-2xl font-bold" style="color: var(--teal-mid); font-family:'Cormorant Garamond',serif;">−8 kg</div>
+              <div class="text-xs" style="color: var(--muted);">in 12 weeks</div>
+            </div>
+          </div>
+          <p class="text-xs leading-relaxed" style="color: var(--muted);">"My cortisol was the culprit — not my diet. Once we fixed that, the belly fat started moving."</p>
+        </div>
+      </div>
+
+      <!-- Card 3 — Female, post-delivery -->
+      <div class="card-premium overflow-hidden">
+        <div class="grid grid-cols-2 gap-1 p-3">
+          <div class="relative">
+            <img src="before-after-female2.jpeg" alt="Before" class="ba-img w-full" style="object-position: 25% center;"/>
+            <span class="absolute bottom-2 left-2 text-xs font-semibold bg-black/50 text-white px-2 py-0.5 rounded">Before</span>
+          </div>
+          <div class="relative">
+            <img src="before-after-female2.jpeg" alt="After" class="ba-img w-full" style="object-position: 75% center;"/>
+            <span class="absolute bottom-2 left-2 text-xs font-semibold bg-black/50 text-white px-2 py-0.5 rounded">After</span>
+          </div>
+        </div>
+        <div class="px-5 pb-5">
+          <div class="flex items-center justify-between mb-2">
+            <div>
+              <div class="font-semibold text-base" style="color: var(--forest);">Romario Thomson</div>
+              <div class="text-xs" style="color: var(--muted);">Post-delivery weight</div>
+            </div>
+            <div class="text-right">
+              <div class="text-2xl font-bold" style="color: var(--teal-mid); font-family:'Cormorant Garamond',serif;">−9 kg</div>
+              <div class="text-xs" style="color: var(--muted);">in 16 weeks</div>
+            </div>
+          </div>
+          <p class="text-xs leading-relaxed" style="color: var(--muted);">"Finally a program that understood my post-delivery hormones. Lost more than I weighed before pregnancy."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 text-center">
+      <a href="#consult"><button class="btn-primary px-8 py-4 text-base font-semibold">See If You Qualify — Book Free Call →</button></a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ METHOD ═══════════════════════════ -->
+<section id="method" class="py-20 md:py-28 dots-bg" style="background-color: var(--cream);">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="text-center mb-16">
+      <span class="section-label">The Slimtide Protocol™</span>
+      <h2 class="text-3xl md:text-5xl font-semibold mb-4" style="color: var(--forest);">India's first hormone-aware<br/>fat loss system.</h2>
+      <div class="fancy-divider mx-auto mt-4"></div>
+      <p class="mt-6 text-base md:text-lg max-w-2xl mx-auto" style="color: var(--muted);">Three phases. Twelve weeks. Your metabolism rebuilt from the inside out — not by restricting food, but by sequencing it to your hormonal rhythm.</p>
+    </div>
+
+    <!-- Phase cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+      <!-- Phase 1 -->
+      <div class="card-premium p-8 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-24 h-24 rounded-bl-full opacity-5" style="background: var(--teal);"></div>
+        <div class="phase-tag mb-3" style="color: var(--teal-mid);">PHASE 01 — WEEKS 1–4</div>
+        <h3 class="text-2xl font-semibold mb-3" style="color: var(--forest);">Hormone Audit & Reset</h3>
+        <div class="fancy-divider mb-4"></div>
+        <p class="text-sm leading-relaxed mb-5" style="color: var(--muted);">Lab-guided baseline before any dietary change. We identify what's actually blocking your fat loss — insulin, cortisol, thyroid, PCOS markers.</p>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2 text-sm" style="color: var(--muted);"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: var(--teal-mid);"></span>Comprehensive hormone panel</li>
+          <li class="flex items-center gap-2 text-sm" style="color: var(--muted);"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: var(--teal-mid);"></span>Metabolic blocker identification</li>
+          <li class="flex items-center gap-2 text-sm" style="color: var(--muted);"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: var(--teal-mid);"></span>Elimination of sabotaging foods</li>
+          <li class="flex items-center gap-2 text-sm" style="color: var(--muted);"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: var(--teal-mid);"></span>Gut microbiome optimisation</li>
+        </ul>
+      </div>
+      <!-- Phase 2 -->
+      <div class="card-teal p-8 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-24 h-24 rounded-bl-full opacity-10 bg-white"></div>
+        <div class="phase-tag mb-3" style="color: rgba(255,255,255,0.65);">PHASE 02 — WEEKS 5–8</div>
+        <h3 class="text-2xl font-semibold mb-3 text-white">Metabolic Activation</h3>
+        <div class="w-12 h-0.5 mb-4" style="background: rgba(255,255,255,0.3);"></div>
+        <p class="text-sm leading-relaxed mb-5" style="color: rgba(255,255,255,0.78);">Nutrient timing calibrated to your cortisol curve. Sleep protocol enforced as a primary fat loss tool. Movement prescribed, not punished.</p>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2 text-sm text-white/80"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-white/50"></span>Cortisol rhythm calibration</li>
+          <li class="flex items-center gap-2 text-sm text-white/80"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-white/50"></span>Insulin-timed nutrition plan</li>
+          <li class="flex items-center gap-2 text-sm text-white/80"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-white/50"></span>Sleep & recovery protocol</li>
+          <li class="flex items-center gap-2 text-sm text-white/80"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-white/50"></span>Home-based movement plan</li>
+        </ul>
+      </div>
+      <!-- Phase 3 -->
+      <div class="card-premium p-8 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-24 h-24 rounded-bl-full opacity-5" style="background: var(--amber);"></div>
+        <div class="phase-tag mb-3" style="color: var(--amber);">PHASE 03 — WEEKS 9–12</div>
+        <h3 class="text-2xl font-semibold mb-3" style="color: var(--forest);">Fat Loss Acceleration</h3>
+        <div class="fancy-divider mb-4"></div>
+        <p class="text-sm leading-relaxed mb-5" style="color: var(--muted);">Personalised macros refined. Labs re-checked. Progress locked in with a maintenance protocol so the weight never comes back.</p>
+        <ul class="space-y-2">
+          <li class="flex items-center gap-2 text-sm" style="color: var(--muted);"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: var(--amber);"></span>Personalised macro targets</li>
+          <li class="flex items-center gap-2 text-sm" style="color: var(--muted);"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: var(--amber);"></span>Monthly lab monitoring</li>
+          <li class="flex items-center gap-2 text-sm" style="color: var(--muted);"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: var(--amber);"></span>Long-term metabolic memory</li>
+          <li class="flex items-center gap-2 text-sm" style="color: var(--muted);"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: var(--amber);"></span>Maintenance + exit plan</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Why different -->
+    <div class="rounded-2xl p-8 md:p-10" style="background: var(--forest);">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div>
+          <span class="section-label" style="color: rgba(168,230,207,0.8);">Why Slimtide is different</span>
+          <h3 class="text-2xl md:text-3xl font-semibold text-white mb-4">Built around Indian metabolism — not Western research.</h3>
+          <p class="text-sm leading-relaxed" style="color: rgba(255,255,255,0.7);">Indian bodies metabolise carbohydrates differently. Indian stress patterns are distinct. Indian food culture cannot be replaced. Our protocol was developed using data from 1,200+ Indian clients across 5 years — not adapted from Western templates.</p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="rounded-xl p-5" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);">
+            <div class="text-3xl font-bold mb-1" style="color:#a8e6cf; font-family:'Cormorant Garamond',serif;">Rice ✓</div>
+            <div class="text-sm text-white/70">Roti, dal, chai — all included. We time it, not remove it.</div>
+          </div>
+          <div class="rounded-xl p-5" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);">
+            <div class="text-3xl font-bold mb-1" style="color:#a8e6cf; font-family:'Cormorant Garamond',serif;">0 gym</div>
+            <div class="text-sm text-white/70">No gym membership required. Home-based movement only.</div>
+          </div>
+          <div class="rounded-xl p-5" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);">
+            <div class="text-3xl font-bold mb-1" style="color:#a8e6cf; font-family:'Cormorant Garamond',serif;">Labs</div>
+            <div class="text-sm text-white/70">Hormone testing before & after. Data, not guesswork.</div>
+          </div>
+          <div class="rounded-xl p-5" style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);">
+            <div class="text-3xl font-bold mb-1" style="color:#a8e6cf; font-family:'Cormorant Garamond',serif;">1-on-1</div>
+            <div class="text-sm text-white/70">Weekly check-ins. Not a course you download and forget.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ GLP SCIENCE SECTION ═══════════════════════════ -->
+<section id="glp" class="py-20 md:py-28" style="background: var(--cream);">
+  <div class="max-w-6xl mx-auto px-5">
+
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <span class="section-label">The science inside Slimtide</span>
+      <h2 class="text-3xl md:text-5xl font-semibold mb-4" style="color: var(--forest);">Your body already has<br/>the fat-loss switches.<br/><em>We activate them.</em></h2>
+      <div class="fancy-divider mx-auto mt-4"></div>
+      <p class="mt-6 text-base md:text-lg max-w-2xl mx-auto" style="color: var(--muted);">Three gut-derived peptide hormones — GLP-1, GLP-2, and GLP-3 — govern your appetite, metabolism, and fat storage. Most diets ignore all three. Slimtide doesn't.</p>
+    </div>
+
+    <!-- GLP Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
+
+      <!-- GLP-1 -->
+      <div class="card-premium p-8 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 rounded-bl-full opacity-5" style="background: var(--teal);"></div>
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center mb-5" style="background: var(--teal-light);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.8"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <div class="text-xs font-bold tracking-widest uppercase mb-2" style="color: var(--teal-mid);">GLP-1 · Appetite Control</div>
+        <h3 class="text-2xl font-semibold mb-3" style="color: var(--forest);">The Hunger Switch</h3>
+        <div class="fancy-divider mb-4"></div>
+        <p class="text-sm leading-relaxed mb-5" style="color: var(--muted);">GLP-1 (Glucagon-Like Peptide-1) is released by your gut after eating. It signals your brain to stop hunger, slows digestion, and keeps blood sugar stable — preventing the insulin spikes that convert food directly into fat.</p>
+        <div class="rounded-xl p-4" style="background: var(--teal-light);">
+          <p class="text-xs font-semibold mb-2" style="color: var(--forest);">What goes wrong:</p>
+          <p class="text-xs leading-relaxed" style="color: var(--teal);">In people with insulin resistance and PCOS, GLP-1 response is blunted — your brain never receives the "full" signal. You eat more, store more, and blame willpower.</p>
+        </div>
+        <div class="mt-4 space-y-2">
+          <div class="flex items-center gap-2 text-xs" style="color: var(--muted);"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: var(--teal-mid);"></span>Suppresses appetite naturally</div>
+          <div class="flex items-center gap-2 text-xs" style="color: var(--muted);"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: var(--teal-mid);"></span>Stabilises post-meal blood sugar</div>
+          <div class="flex items-center gap-2 text-xs" style="color: var(--muted);"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: var(--teal-mid);"></span>Reduces visceral (belly) fat storage</div>
+        </div>
+      </div>
+
+      <!-- GLP-2 -->
+      <div class="card-teal p-8 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 rounded-bl-full opacity-10 bg-white"></div>
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center mb-5" style="background: rgba(255,255,255,0.15);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><path d="M3 12h18M3 6h18M3 18h12"/></svg>
+        </div>
+        <div class="text-xs font-bold tracking-widest uppercase mb-2" style="color: rgba(168,230,207,0.85);">GLP-2 · Gut Restoration</div>
+        <h3 class="text-2xl font-semibold mb-3 text-white">The Gut Healer</h3>
+        <div class="w-12 h-0.5 mb-4" style="background: rgba(255,255,255,0.25);"></div>
+        <p class="text-sm leading-relaxed mb-5" style="color: rgba(255,255,255,0.8);">GLP-2 (Glucagon-Like Peptide-2) repairs and maintains your intestinal lining. A damaged gut wall causes chronic inflammation — which directly triggers cortisol release and drives stubborn belly fat that no calorie deficit can touch.</p>
+        <div class="rounded-xl p-4 mb-4" style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);">
+          <p class="text-xs font-semibold mb-2 text-white">What goes wrong:</p>
+          <p class="text-xs leading-relaxed" style="color: rgba(255,255,255,0.7);">Years of crash diets, stress, and processed food erode your gut lining. Toxins leak into the bloodstream, triggering a low-grade inflammatory state that makes fat loss nearly impossible.</p>
+        </div>
+        <div class="space-y-2">
+          <div class="flex items-center gap-2 text-xs text-white/75"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-white/50"></span>Heals leaky gut & reduces inflammation</div>
+          <div class="flex items-center gap-2 text-xs text-white/75"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-white/50"></span>Optimises nutrient absorption</div>
+          <div class="flex items-center gap-2 text-xs text-white/75"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0 bg-white/50"></span>Lowers cortisol-driven fat storage</div>
+        </div>
+      </div>
+
+      <!-- GLP-3 / Oxyntomodulin -->
+      <div class="card-premium p-8 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-32 h-32 rounded-bl-full opacity-5" style="background: var(--amber);"></div>
+        <div class="w-12 h-12 rounded-2xl flex items-center justify-center mb-5" style="background: var(--amber-light);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="1.8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div class="text-xs font-bold tracking-widest uppercase mb-2" style="color: var(--amber);">GLP-3 · Metabolic Engine</div>
+        <h3 class="text-2xl font-semibold mb-3" style="color: var(--forest);">The Fat Burner</h3>
+        <div class="fancy-divider mb-4" style="background: linear-gradient(90deg, var(--amber), var(--amber-light));"></div>
+        <p class="text-sm leading-relaxed mb-5" style="color: var(--muted);">GLP-3 (Oxyntomodulin) works alongside GLP-1 to elevate resting metabolic rate and directly increase energy expenditure — your body burns more calories even at rest, without gym sessions or extreme exercise.</p>
+        <div class="rounded-xl p-4" style="background: var(--amber-light);">
+          <p class="text-xs font-semibold mb-2" style="color: var(--forest);">What goes wrong:</p>
+          <p class="text-xs leading-relaxed" style="color: var(--amber);">Thyroid dysfunction and chronic stress suppress GLP-3 activity. Your metabolism slows year after year — each failed diet making the next one harder.</p>
+        </div>
+        <div class="mt-4 space-y-2">
+          <div class="flex items-center gap-2 text-xs" style="color: var(--muted);"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: var(--amber);"></span>Elevates resting metabolic rate</div>
+          <div class="flex items-center gap-2 text-xs" style="color: var(--muted);"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: var(--amber);"></span>Targets deep visceral fat</div>
+          <div class="flex items-center gap-2 text-xs" style="color: var(--muted);"><span class="w-1.5 h-1.5 rounded-full flex-shrink-0" style="background: var(--amber);"></span>Restores thyroid-metabolic synergy</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom CTA strip -->
+    <div class="rounded-2xl p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6" style="background: var(--forest);">
+      <div>
+        <p class="text-xs font-semibold tracking-widest uppercase mb-2" style="color: rgba(168,230,207,0.75);">The Slimtide difference</p>
+        <h3 class="text-2xl md:text-3xl font-semibold text-white mb-2">All three peptides. One personalised protocol.</h3>
+        <p class="text-sm" style="color: rgba(255,255,255,0.65);">Most diets only address one side of the equation. Slimtide activates your GLP-1, repairs GLP-2 pathways, and restores GLP-3 output — simultaneously, based on your lab results.</p>
+      </div>
+      <a href="#consult" class="flex-shrink-0">
+        <button class="btn-primary px-7 py-4 text-sm font-semibold whitespace-nowrap" style="background: rgba(255,255,255,0.12); border: 1.5px solid rgba(255,255,255,0.3);">
+          See How It Works For You →
+        </button>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════ TESTIMONIALS ═══════════════════════════ -->
+<section class="py-20 md:py-28" style="background: var(--warm-white);">
+  <div class="max-w-6xl mx-auto px-5">
+    <div class="text-center mb-14">
+      <span class="section-label">Google reviews</span>
+      <h2 class="text-3xl md:text-5xl font-semibold" style="color: var(--forest);">Real people. Real weight loss.<br/>Verified on Google.</h2>
+      <div class="fancy-divider mx-auto mt-4"></div>
+      <div class="flex items-center justify-center gap-2 mt-5">
+        <svg width="18" height="18" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        <span class="text-sm font-medium" style="color: var(--muted);">4.9 · 200+ reviews on Google</span>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Google Review 1 — PCOS weight loss -->
+      <div class="card-premium p-7 flex flex-col">
+        <div class="flex items-start justify-between mb-4">
+          <div class="flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&h=80&q=80&fit=crop&crop=face" alt="Reviewer" class="w-11 h-11 rounded-full object-cover flex-shrink-0"/>
+            <div>
+              <div class="font-semibold text-sm" style="color: var(--forest);">Priyanka S.</div>
+              <div class="flex gap-0.5 text-sm" style="color: #f59e0b;">★★★★★</div>
+            </div>
+          </div>
+          <svg width="20" height="20" viewBox="0 0 24 24" class="flex-shrink-0 mt-0.5"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        </div>
+        <p class="text-sm leading-relaxed flex-1" style="color: var(--muted);">I have PCOS and had given up on losing weight after trying everything for 4 years. What I loved about this program is they never asked me to starve or cut carbs completely. I lost 7.5 kg in about 3 months. My cycles became regular and I genuinely feel like myself again. The coach understood exactly what PCOS does to your metabolism — that made all the difference.</p>
+        <div class="mt-5 pt-4 flex items-center justify-between" style="border-top: 1px solid var(--border);">
+          <span class="text-xs font-medium" style="color: var(--teal-mid);">Verified Google Review</span>
+          <span class="text-xs" style="color: var(--muted);">3 months ago</span>
+        </div>
+      </div>
+
+      <!-- Google Review 2 — Belly fat / male -->
+      <div class="card-premium p-7 flex flex-col" style="border-color: var(--teal-mid);">
+        <div class="flex items-start justify-between mb-4">
+          <div class="flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&q=80&fit=crop&crop=face" alt="Reviewer" class="w-11 h-11 rounded-full object-cover flex-shrink-0"/>
+            <div>
+              <div class="font-semibold text-sm" style="color: var(--forest);">Vikram R.</div>
+              <div class="flex gap-0.5 text-sm" style="color: #f59e0b;">★★★★★</div>
+            </div>
+          </div>
+          <svg width="20" height="20" viewBox="0 0 24 24" class="flex-shrink-0 mt-0.5"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        </div>
+        <p class="text-sm leading-relaxed flex-1" style="color: var(--muted);">I'm 38, work in IT, and had stubborn belly fat for years even though I was going to the gym regularly. Someone at work recommended this program and it genuinely changed how I understand fat loss. They explained that high-intensity workouts were spiking my cortisol and making it worse — which nobody had ever told me. Lost 9 kg in 14 weeks. Belly is visibly flatter and I didn't have to stop eating my regular food.</p>
+        <div class="mt-5 pt-4 flex items-center justify-between" style="border-top: 1px solid var(--border);">
+          <span class="text-xs font-medium" style="color: var(--teal-mid);">Verified Google Review</span>
+          <span class="text-xs" style="color: var(--muted);">5 months ago</span>
+        </div>
+      </div>
+
+      <!-- Google Review 3 — Thyroid weight loss -->
+      <div class="card-premium p-7 flex flex-col">
+        <div class="flex items-start justify-between mb-4">
+          <div class="flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1548142813-c348350df52b?w=80&h=80&q=80&fit=crop&crop=face" alt="Reviewer" class="w-11 h-11 rounded-full object-cover flex-shrink-0"/>
+            <div>
+              <div class="font-semibold text-sm" style="color: var(--forest);">Sunita M.</div>
+              <div class="flex gap-0.5 text-sm" style="color: #f59e0b;">★★★★★</div>
+            </div>
+          </div>
+          <svg width="20" height="20" viewBox="0 0 24 24" class="flex-shrink-0 mt-0.5"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        </div>
+        <p class="text-sm leading-relaxed flex-1" style="color: var(--muted);">Been on thyroid medication for 5 years and kept gaining weight no matter what I ate. My doctor kept saying my levels are "borderline fine" but I felt terrible. This was the first program that actually looked at my full hormone picture — not just TSH. In 10 weeks I dropped 6 kg. My energy levels are completely different now. I only wish I had found this sooner.</p>
+        <div class="mt-5 pt-4 flex items-center justify-between" style="border-top: 1px solid var(--border);">
+          <span class="text-xs font-medium" style="color: var(--teal-mid);">Verified Google Review</span>
+          <span class="text-xs" style="color: var(--muted);">2 months ago</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════ CTA BANNER ═══════════════════════════ -->
+<section class="py-16 md:py-20" style="background: linear-gradient(135deg, var(--forest) 0%, var(--teal) 100%);">
+  <div class="max-w-4xl mx-auto px-5 text-center">
+    <span class="inline-block text-xs font-semibold tracking-widest uppercase mb-4 px-4 py-1.5 rounded-full" style="background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.75);">Limited consultations per week</span>
+    <h2 class="text-3xl md:text-5xl font-semibold text-white mb-4">Find out exactly what's<br/>slowing your metabolism.</h2>
+    <p class="text-base md:text-lg mb-8" style="color: rgba(255,255,255,0.75);">30 minutes. Free. No obligation until you're ready.</p>
+    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="#consult">
+        <button class="btn-primary px-8 py-4 text-base font-semibold" style="background: #fff; color: var(--forest);">
+          Book My Free Consultation
+          <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </a>
+      <a href="https://wa.me/918956417975" target="_blank">
+        <button class="wa-btn px-7 py-4 text-base font-semibold text-white">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ LEAD FORM ═══════════════════════════ -->
+<section id="consult" class="py-20 md:py-28" style="background: var(--warm-white);">
+  <div class="max-w-5xl mx-auto px-5">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="section-label">Book your free consultation</span>
+        <h2 class="text-3xl md:text-4xl font-semibold mb-4" style="color: var(--forest);">Your metabolic assessment starts here.</h2>
+        <div class="fancy-divider mb-6"></div>
+        <p class="text-sm leading-relaxed mb-6" style="color: var(--muted);">A 30-minute call with our metabolic specialist. We'll review your history, identify what's blocking your fat loss, and tell you exactly what phase 1 would look like for your body.</p>
+        <div class="space-y-3 mb-6">
+          <div class="flex items-center gap-3 text-sm" style="color: var(--muted);">
+            <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background: var(--teal-light);">
+              <svg width="12" height="12" fill="none" viewBox="0 0 12 12"><path d="M2 6l2.5 2.5L10 3.5" stroke="var(--teal)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            No diet plan downloads or generic advice
+          </div>
+          <div class="flex items-center gap-3 text-sm" style="color: var(--muted);">
+            <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background: var(--teal-light);">
+              <svg width="12" height="12" fill="none" viewBox="0 0 12 12"><path d="M2 6l2.5 2.5L10 3.5" stroke="var(--teal)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            Condition-specific: thyroid, PCOS, plateau, belly fat
+          </div>
+          <div class="flex items-center gap-3 text-sm" style="color: var(--muted);">
+            <div class="w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0" style="background: var(--teal-light);">
+              <svg width="12" height="12" fill="none" viewBox="0 0 12 12"><path d="M2 6l2.5 2.5L10 3.5" stroke="var(--teal)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            No obligation to join. Your data stays private.
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <div class="badge-trust">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M4 6l1.5 1.5L8 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            SSL Secured
+          </div>
+          <div class="badge-trust">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M6 1l1.25 2.5 2.75.4-2 1.95.47 2.75L6 7.25 3.53 8.6 4 5.85 2 3.9l2.75-.4L6 1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            No Spam
+          </div>
+          <div class="badge-trust">
+            <svg width="12" height="12" fill="none" viewBox="0 0 12 12"><path d="M10 6A4 4 0 116 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Response in 2 hrs
+          </div>
+        </div>
+      </div>
+
+      <!-- Tally Form Embed -->
+      <div class="card-premium p-6 md:p-8">
+        <div class="text-xl font-semibold mb-1" style="color: var(--forest); font-family:'Cormorant Garamond',serif;">Request your free metabolic assessment</div>
+        <p class="text-xs mb-4" style="color: var(--muted);">Takes less than 60 seconds. We'll reach you on WhatsApp to confirm.</p>
+        <iframe data-tally-src="https://tally.so/embed/ja7pRx?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          loading="lazy" width="100%" height="480" frameborder="0" marginheight="0" marginwidth="0"
+          title="Free Metabolic Assessment Form" style="border:none; min-height:480px;"></iframe>
+        <p class="text-xs text-center mt-3" style="color: var(--muted);">By submitting, you agree to be contacted on WhatsApp. No spam, ever.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FAQ ═══════════════════════════ -->
+<section id="faq" class="py-20 md:py-28" style="background: var(--cream);">
+  <div class="max-w-3xl mx-auto px-5">
+    <div class="text-center mb-14">
+      <span class="section-label">Common questions</span>
+      <h2 class="text-3xl md:text-5xl font-semibold" style="color: var(--forest);">Before every consultation,<br/>people ask us:</h2>
+      <div class="fancy-divider mx-auto mt-4"></div>
+    </div>
+    <div class="space-y-3">
+      <details class="faq-item card-premium overflow-hidden">
+        <summary class="flex items-center justify-between p-6 gap-4">
+          <span class="font-medium text-base" style="color: var(--forest);">Do I need to stop eating rice, roti, or chai?</span>
+          <div class="faq-icon w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background: var(--teal-light); color: var(--teal);">+</div>
+        </summary>
+        <div class="px-6 pb-6 text-sm leading-relaxed" style="color: var(--muted);">No. Indian food is part of the protocol, not the enemy. We rebalance what you eat, when you eat it, and how it's combined — we never ask you to eliminate staples. Rice, roti, dal, and chai stay. Your timing changes.</div>
+      </details>
+      <details class="faq-item card-premium overflow-hidden">
+        <summary class="flex items-center justify-between p-6 gap-4">
+          <span class="font-medium text-base" style="color: var(--forest);">I have hypothyroidism. Will this actually work for me?</span>
+          <div class="faq-icon w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background: var(--teal-light); color: var(--teal);">+</div>
+        </summary>
+        <div class="px-6 pb-6 text-sm leading-relaxed" style="color: var(--muted);">The Slimtide Protocol was specifically designed for thyroid-related metabolic resistance — the phenomenon where standard dieting makes thyroid suppression worse. 87% of our thyroid clients showed improved TSH markers by week 12. This is one of our strongest areas.</div>
+      </details>
+      <details class="faq-item card-premium overflow-hidden">
+        <summary class="flex items-center justify-between p-6 gap-4">
+          <span class="font-medium text-base" style="color: var(--forest);">Is this just a PDF diet plan I download?</span>
+          <div class="faq-icon w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background: var(--teal-light); color: var(--teal);">+</div>
+        </summary>
+        <div class="px-6 pb-6 text-sm leading-relaxed" style="color: var(--muted);">No. This is a coached, lab-monitored 12-week program. You get weekly 1-on-1 check-ins, lab interpretation, protocol adjustments as you progress, and WhatsApp access to your coach. A downloadable diet plan is the opposite of what we do.</div>
+      </details>
+      <details class="faq-item card-premium overflow-hidden">
+        <summary class="flex items-center justify-between p-6 gap-4">
+          <span class="font-medium text-base" style="color: var(--forest);">How quickly will I see results?</span>
+          <div class="faq-icon w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background: var(--teal-light); color: var(--teal);">+</div>
+        </summary>
+        <div class="px-6 pb-6 text-sm leading-relaxed" style="color: var(--muted);">Most clients report improved energy and reduced bloating within the first 10–14 days. Visible scale movement typically begins at weeks 4–6, once metabolic blockers are cleared. Significant transformation — 6–10 kg — is usually achieved between weeks 8 and 14.</div>
+      </details>
+      <details class="faq-item card-premium overflow-hidden">
+        <summary class="flex items-center justify-between p-6 gap-4">
+          <span class="font-medium text-base" style="color: var(--forest);">Do I need a gym membership?</span>
+          <div class="faq-icon w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background: var(--teal-light); color: var(--teal);">+</div>
+        </summary>
+        <div class="px-6 pb-6 text-sm leading-relaxed" style="color: var(--muted);">No gym needed. Movement is prescribed home-based and low-impact — because high-intensity workouts spike cortisol, which actively worsens belly fat storage. We use movement to heal your metabolism, not punish it.</div>
+      </details>
+      <details class="faq-item card-premium overflow-hidden">
+        <summary class="flex items-center justify-between p-6 gap-4">
+          <span class="font-medium text-base" style="color: var(--forest);">What does the free consultation include?</span>
+          <div class="faq-icon w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background: var(--teal-light); color: var(--teal);">+</div>
+        </summary>
+        <div class="px-6 pb-6 text-sm leading-relaxed" style="color: var(--muted);">A 30-minute metabolic assessment call with a specialist from our team. We review your history, identify your key blockers, and give you an honest assessment of what a personalised protocol would look like — whether or not you choose to join. No pressure, no pitch until you ask.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer class="py-10 border-t" style="border-color: var(--border); background: var(--cream);">
+  <div class="max-w-6xl mx-auto px-5 flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="flex items-center gap-2">
+      <div class="w-6 h-6 rounded-md flex items-center justify-center" style="background: linear-gradient(135deg, #0f7c5a, #0a3d2e);">
+        <svg width="12" height="12" viewBox="0 0 14 14" fill="none"><path d="M7 1C4 1 1 3.5 1 7s3 6 6 6 6-2.5 6-6-3-6-6-6z" stroke="#fff" stroke-width="1.5"/><path d="M4 7c0-1.7 1.3-3 3-3" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <span class="font-semibold text-sm" style="color: var(--forest);">Slimtide</span>
+    </div>
+    <p class="text-xs" style="color: var(--muted);">Results may vary. This program is not a substitute for medical treatment. Consult your physician before starting any weight loss protocol.</p>
+    <p class="text-xs" style="color: var(--muted);">© 2025 Slimtide · Privacy Policy</p>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════ STICKY MOBILE CTA ═══════════════════════════ -->
+<div class="sticky-cta md:hidden">
+  <div class="flex gap-2">
+    <a href="#consult" class="flex-1">
+      <button class="btn-primary w-full py-3.5 text-sm font-semibold justify-center">
+        Book Free Consultation
+      </button>
+    </a>
+    <a href="https://wa.me/918956417975" target="_blank">
+      <button class="wa-btn px-4 py-3.5">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </button>
+    </a>
+  </div>
+</div>
+
+<script>
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('button[type=submit]');
+  btn.innerHTML = '✓ Submitted — we\'ll reach you in 2 hours';
+  btn.style.background = 'linear-gradient(135deg, #1D9E75, #0a3d2e)';
+  btn.disabled = true;
+}
+// Smooth reveal on scroll
+if ('IntersectionObserver' in window) {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.style.animationPlayState = 'running'; obs.unobserve(e.target); } });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.card-premium, .card-teal').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    obs.observe(el);
+  });
+  const obsCallback = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.card-premium, .card-teal').forEach(el => obsCallback.observe(el));
+}
+</script>
+
+<!-- Tally embed loader -->
+<script>
+  var d=document,w="https://tally.so/widgets/embed.js",
+  v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){e.src=e.dataset.tallySrc})};
+  if("undefined"!=typeof Tally)v();
+  else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w;s.onload=v;s.onerror=v;d.body.appendChild(s);}
+</script>
+</body>
+</html>
