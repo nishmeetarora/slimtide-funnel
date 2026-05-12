@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0EA5B7"/>
+      <stop offset="100%" stop-color="#1E40AF"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7DD3FC" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#BAE6FD" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect x="0" y="0" width="512" height="512" rx="112" ry="112" fill="url(#bgGrad)"/>
+
+  <!-- Subtle background wave (tide motif, sits behind the S) -->
+  <path d="M 40 360
+           C 120 320, 180 400, 256 360
+           S 392 320, 472 360
+           L 472 472
+           L 40 472 Z"
+        fill="url(#waveGrad)"/>
+
+  <!-- Second smaller wave for depth -->
+  <path d="M 40 400
+           C 130 370, 190 430, 256 400
+           S 390 370, 472 400
+           L 472 472
+           L 40 472 Z"
+        fill="#ffffff" fill-opacity="0.18"/>
+
+  <!-- Stylized "S" mark — bold, readable at small sizes -->
+  <path d="M 340 165
+           C 340 135, 305 115, 260 115
+           C 200 115, 160 145, 160 195
+           C 160 240, 200 255, 256 268
+           C 312 280, 352 295, 352 340
+           C 352 390, 305 415, 245 415
+           C 195 415, 160 395, 160 365"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="46"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
